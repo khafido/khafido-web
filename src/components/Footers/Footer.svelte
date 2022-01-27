@@ -1,4 +1,4 @@
-<script>
+<!-- <script>
   // make dynamic date to be added to footer
   let date = new Date().getFullYear();
 </script>
@@ -160,4 +160,42 @@
       </div>
     </div>
   </div>
-</footer>
+</footer> -->
+
+<hr />
+<div class="justify-center text-center flex flex-wrap mt-12">
+  <div class="w-full md:w-6/12 px-12 md:px-4">
+    <h4 class="text-3xl font-semibold">Let's keep in touch!</h4>
+    <div class="lg:mb-0 mb-6">
+      <a href="https://twitter.com/khafido_" target="_blank">
+        <button
+          class="bg-white text-lightBlue-600 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2"
+        >
+          <i class="fab fa-twitter" />
+        </button>
+      </a>
+      <a href="https://www.linkedin.com/in/kha%EF%AC%81do/" target="_blank">
+        <button
+          class="bg-white text-lightBlue-600 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2"
+        >
+          <i class="fab fa-linkedin" />
+        </button>
+      </a>
+      <a href="https://github.com/khafido/" target="_blank">
+        <button
+          class="bg-white text-lightBlue-600 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2"
+        >
+          <i class="fab fa-github" />
+        </button>
+      </a>
+      <a href="https://www.instagram.com/khafido_" target="_blank">
+        <button
+          class="bg-white text-lightBlue-600 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2"
+        >
+          <i class="fab fa-instagram" />
+        </button>
+      </a>
+    </div>
+    <br /><br />
+  </div>
+</div>

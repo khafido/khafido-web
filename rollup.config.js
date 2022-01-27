@@ -11,6 +11,7 @@ import { terser } from "rollup-plugin-terser";
 import alias from "@rollup/plugin-alias";
 import fs from "fs";
 
+// const production = false;
 const production = !process.env.ROLLUP_WATCH;
 
 // configure aliases for absolute imports
@@ -55,7 +56,7 @@ const indexTemplate = `<!--
       rel="stylesheet"
       href="/assets/vendor/@fortawesome/fontawesome-free/css/all.min.css"
     />
-    <link rel="stylesheet" href="/assets/styles/tailwind.css" />
+    <link rel="stylesheet" href="/assets/styles/tailwind.css" />    
     <title>Khafido Ilzam</title>
 
     <script>
@@ -150,7 +151,7 @@ export default {
     sourcemap: true,
     format: "iife",
     name: "app",
-    file: "/public/build/bundle.js",
+    file: "public/build/bundle.js",
   },
   plugins: [
     svelte({
@@ -159,10 +160,11 @@ export default {
       // we'll extract any component CSS out into
       // a separate file - better for performance
       css: (css) => {
-        css({output:"/public/build/bundle.css"});
+        // css.write("bundle.css");
+        css({output:"bundle.css"});
       },
     }),
-
+    
     // If you have external dependencies installed from
     // npm, you'll most likely need these plugins. In
     // some cases you'll need additional configuration -

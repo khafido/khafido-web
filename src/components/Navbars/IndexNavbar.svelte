@@ -1,5 +1,5 @@
 <script>
-  import { link } from "svelte-routing";
+  import { link } from "svelte-routing";  
 
   // core components
   // import IndexDropdown from "../components/Dropdowns/IndexDropdown.svelte";
@@ -14,10 +14,10 @@
 </script>
 
 <nav
-  class="top-0 z-50 w-full fixed flex flex-wrap items-center justify-between px-2 pt-3 navbar-expand-lg bg-white border"
+  class="top-0 z-50 w-full fixed flex flex-wrap items-center justify-between px-2 navbar-expand-lg bg-white border"
 >
   <div
-    class="container px-4 mx-auto flex flex-wrap items-center justify-between"
+    class="container px-8 mx-auto flex flex-wrap items-center justify-between"
   >
     <div
       class="w-full relative flex justify-between lg:w-auto lg:static lg:block lg:justify-start"
@@ -41,17 +41,19 @@
       class="lg:flex flex-grow items-center {navbarOpen ? 'block':'hidden'}"
       id="example-navbar-warning"
     >
-      <ul class="flex flex-col lg:flex-row list-none lg:ml-auto">
+      <ul class="flex lg:flex-row list-none lg:ml-auto">
         <li class="flex items-center">
           <a
-          class="hover:text-blueGray-500 text-blueGray-700 px-3 py-2 flex items-center text-sm font-bold"
-          href="/">Home
+            use:link
+            class="hover:text-blueGray-500 text-blueGray-700 px-3 py-2 flex items-center text-sm font-bold"
+            href="/">Home
           </a>
         </li>
         <li class="flex items-center">
           <a
+            use:link
             class="hover:text-blueGray-500 text-blueGray-700 px-3 py-2 flex items-center text-sm font-bold"
-            href="/">Backend Roadmap
+            href="/backend">Backend Roadmap
           </a>
         </li>
         <li class="flex items-center">

@@ -94,6 +94,7 @@ module.exports = {
     "disabled",
   ],
   plugins: [
+    require('@themesberg/flowbite/plugin'),
     require("@tailwindcss/forms"),
     plugin(function ({ addComponents, theme }) {
       const screens = theme("screens", {});
